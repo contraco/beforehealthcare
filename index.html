@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Welcome to Before Healthcare</title>
-  <!-- ADDED: Robots Meta Tag -->
-  <meta name="robots" content="noindex, nofollow">
+
+  <!-- Robots -->
+  <meta name="robots" content="noindex, nofollow" />
 
   <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-23JPVF916Q"></scriptow.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+  https://www.googletagmanager.com/gtag/js?id=G-23JPVF916Q</script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
     gtag('js', new Date());
     gtag('config', 'G-23JPVF916Q', {
       page_title: 'Welcome to Before Healthcare',
@@ -18,28 +21,36 @@
   </script>
 
   <style>
+    :root {
+      --c-grey: #333333;
+      --c-grey2: #969696;
+      --c-red: #e62d00; /* contraco red if you want to accent anything later */
+    }
+    html, body { height: 100%; }
     body {
       margin: 0;
-      padding: 0;
       display: flex;
-      justify-content: center;
       align-items: center;
-      height: 100vh;
-      background-color: #f9f9f9;
-      font-family: Tahoma, sans-serif;
+      justify-content: center;
+      background: #f9f9f9;
+      font-family: Tahoma, Arial, sans-serif;
+      color: var(--c-grey);
     }
-    .logo-container {
-      text-align: center;
-    }
-    .logo-container img {
-      max-width: 300px;
-      height: auto;
-    }
+    .wrap { text-align: center; padding: 24px; }
+    .logo { max-width: 340px; width: 70vw; height: auto; }
+    h1 { margin: 16px 0 0; font-weight: 600; }
   </style>
 </head>
 <body>
-  <div class="logo-container">
-    <img src="beforehealthcare.svg" alt="Before Healthcarelcome to Our Website</h1>
+  <div class="wrap">
+    <!-- Use absolute path to be safe on GitHub Pages/custom domains -->
+    <img class="logo" src="/  <h1>Welcome to Before Healthcare</h1>
   </div>
+
+  <noscript>
+    <div style="position:fixed;bottom:8px;left:8px;color:#969696;font:14px Tahoma, sans-serif">
+      JavaScript is disabled. Analytics will not run.
+    </div>
+  </noscript>
 </body>
 </html>
