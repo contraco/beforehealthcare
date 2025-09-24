@@ -8,8 +8,12 @@
   <!-- Robots -->
   <meta name="robots" content="noindex, nofollow" />
 
-  <!-- Google Analytics (correctly formed) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-23JPVF916t>
+  <!-- Optional: favicon from your SVG -->
+  /beforehealthcare.svg
+
+  <!-- Google Analytics (correct) -->
+  https://www.googletagmanager.com/gtag/js?id=G-23JPVF916Q</script>
+  <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){ dataLayer.push(arguments); }
     gtag('js', new Date());
@@ -23,7 +27,7 @@
     :root {
       --c-grey: #333333;
       --c-grey2: #969696;
-      --c-red: #e62d00; /* accent available if needed */
+      --c-red: #e62d00; /* accent if needed */
     }
     html, body { height: 100%; }
     body {
@@ -42,8 +46,14 @@
 </head>
 <body>
   <div class="wrap">
-    beforehealthcare.svg
+    /beforehealthcare.svg
     <h1>Welcome to Before Healthcare</h1>
   </div>
+
+  <noscript>
+    <div style="position:fixed;bottom:8px;left:8px;color:#969696;font:14px Tahoma, sans-serif">
+      JavaScript is disabled. Analytics will not run.
+    </div>
+  </noscript>
 </body>
 </html>
