@@ -4,12 +4,26 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Welcome to Before Healthcare</title>
+
+  <!-- Robots -->
   <meta name="robots" content="noindex, nofollow" />
+
+  <!-- Google Analytics (correctly formed) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-23JPVF916t>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-23JPVF916Q', {
+      page_title: 'Welcome to Before Healthcare',
+      page_location: window.location.href
+    });
+  </script>
+
   <style>
     :root {
       --c-grey: #333333;
       --c-grey2: #969696;
-      --c-red: #e62d00; /* contraco red available for accents */
+      --c-red: #e62d00; /* accent available if needed */
     }
     html, body { height: 100%; }
     body {
@@ -28,7 +42,8 @@
 </head>
 <body>
   <div class="wrap">
-    <img class="logo" src="/beforehealthcare.svg" alt="Before Healthcare logo" />
-y>
-</html>    <h1>Welcome to Before Healthcare</h1>
-  </div>s
+    beforehealthcare.svg
+    <h1>Welcome to Before Healthcare</h1>
+  </div>
+</body>
+</html>
